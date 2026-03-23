@@ -1,21 +1,19 @@
 function calculateTax(amount) {
-    return Number(amount) * 0.10;
+  return amount * 0.10;
 }
-
 function convertToUpperCase(text) {
-    return String(text).toUpperCase();
+  return text.toUpperCase();
 }
-
 function findMaximum(num1, num2) {
-    return Number(num1) > Number(num2) ? Number(num1) : Number(num2);
+  return Math.max(num1, num2);
 }
-
 function isPalindrome(word) {
-    let w = String(word).toLowerCase().replace(/\s/g,'');
-    return w === w.split('').reverse().join('');
+  const reversed = word.split('').reverse().join('');
+  return word.toLowerCase() === reversed.toLowerCase();
+}
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
+  const discountAmount = originalPrice * (discountPercentage / 100);
+  return originalPrice - discountAmount;
 }
 
-function calculateDiscountedPrice(originalPrice, discountPercentage) {
-    let price = Number(originalPrice);
-    return price - (price * (Number(discountPercentage)/100));
-}
+module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
