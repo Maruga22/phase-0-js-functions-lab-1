@@ -1,26 +1,21 @@
-// Function 1: calculateTax
 function calculateTax(amount) {
-    return amount * 0.10;
+    return Number(amount) * 0.10;
 }
 
-// Function 2: convertToUpperCase
 function convertToUpperCase(text) {
-    return text.toUpperCase();
+    return String(text).toUpperCase();
 }
 
-// Function 3: findMaximum
 function findMaximum(num1, num2) {
-    return num1 > num2 ? num1 : num2;
+    return Number(num1) > Number(num2) ? Number(num1) : Number(num2);
 }
 
-// Function 4: isPalindrome (IMPORTANT: ignore case)
 function isPalindrome(word) {
-    let lowerWord = word.toLowerCase();
-    let reversedWord = lowerWord.split('').reverse().join('');
-    return lowerWord === reversedWord;
+    let w = String(word).toLowerCase().replace(/\s/g,'');
+    return w === w.split('').reverse().join('');
 }
 
-// Function 5: calculateDiscountedPrice
 function calculateDiscountedPrice(originalPrice, discountPercentage) {
-    return originalPrice - (originalPrice * (discountPercentage / 100));
+    let price = Number(originalPrice);
+    return price - (price * (Number(discountPercentage)/100));
 }
