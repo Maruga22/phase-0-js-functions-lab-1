@@ -17,3 +17,17 @@ function calculateDiscountedPrice(originalPrice, discountPercentage) {
 }
 
 module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
+
+console.log(calculateTax(100)); // Output: 10
+console.log(convertToUpperCase('hello')); // Output: 'HELLO'
+console.log(findMaximum(5, 10)); // Output: 10
+console.log(isPalindrome('racecar')); // Output: true
+console.log(calculateDiscountedPrice(100, 20)); // Output: 80
+
+module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
+
+console.log(calculateTax(100)); // Output: 10
+console.log(convertToUpperCase('hello')); // Output: 'HELLO'
+console.log(findMaximum(5, 10)); // Output: 10
+console.log(isPalindrome('racecar')); // Output: true
+console.log(calculateDiscountedPrice(100, 20)); // Output: 80   
